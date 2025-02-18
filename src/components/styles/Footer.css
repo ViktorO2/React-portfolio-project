@@ -1,0 +1,68 @@
+footer {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+footer h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffdd57;
+}
+
+/* Долен текст */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Респонсивен дизайн */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+
+  footer h2 {
+    font-size: 22px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+  }
+}

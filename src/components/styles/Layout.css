@@ -1,0 +1,19 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+}

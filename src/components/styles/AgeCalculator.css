@@ -1,0 +1,106 @@
+.age-calculator {
+  padding: 30px;
+  max-width: 420px;
+  margin: 50px auto;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f3f3f3, #ffffff);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.age-calculator h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 12px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+  outline: none;
+}
+
+.calculate-button {
+  padding: 14px 22px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+}
+
+.calculate-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: scale(1.06);
+}
+
+.calculate-button:active {
+  transform: scale(1);
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #28a745;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.age-calculator-footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

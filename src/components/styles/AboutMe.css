@@ -1,0 +1,67 @@
+.about-me {
+  background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
+  color: white;
+  padding: 60px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.about-content {
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  gap: 50px;
+}
+.text-content {
+  max-width: 500px;
+}
+.text-content h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #ffdd57;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.icon {
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #ffdd57;
+}
+
+.image-content img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(255, 221, 87, 0.4);
+}
+
+/* Респонсивен дизайн */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-content img {
+    width: 200px;
+  }
+}

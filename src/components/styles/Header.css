@@ -1,0 +1,139 @@
+/* Основен стил за хедъра */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+.logo h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Стил за навигацията */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Основен стил за навигационния списък */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.nav-list li {
+  position: sticky;
+}
+
+.nav-list a,
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 0px 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-list a:hover,
+.nav-link:hover {
+  color: #ff0000;
+}
+
+/* Падащо меню */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -45px;
+  background: white;
+  color: black;
+  list-style: none;
+  padding: 0;
+  min-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 15;
+}
+
+.dropdown-menu li {
+  padding: 15px;
+  transition: background 0.1s ease;
+}
+
+.dropdown-menu li a {
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+.dropdown-menu li:hover {
+  background: #ffffff;
+}
+
+/* Показване на падащото меню при hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Медия заявка за мобилни устройства */
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    width: 220px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .nav.open .nav-list {
+    display: flex;
+  }
+
+  .nav-list li {
+    padding: 10px 0;
+  }
+
+  .dropdown-menu {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: none;
+    position: sticky;
+    padding-left: 15px;
+  }
+
+  .dropdown-menu.open {
+    display: block;
+  }
+
+  .dropdown-menu li a {
+    color: rgb(254, 248, 248);
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+}
