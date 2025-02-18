@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiKey = "cadae902b57a05d21b0cbaa9b5967dcb";
+const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
 export const fetchWeather = async (city: string) => {
   if (!city) throw new Error("City name is required");
